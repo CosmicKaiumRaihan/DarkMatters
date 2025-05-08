@@ -1,0 +1,65 @@
+halo_data:
+    name: "coma"
+    profile: "nfw"
+    scale:
+      value: 0.287
+      unit: "Mpc"
+    cvir: 9.4
+    rvir:
+      value: 2.7
+      unit: "Mpc"
+    mvir: 
+      value: 1.2e+15
+      unit: "solMass"
+    z: 0.0231
+    halo_weights: "flat"
+
+gas_data:
+  profile: "flat"
+  gas_norm: 
+    value: 3.49e-3
+    unit: "1/cm^3"
+
+mag_data:
+  profile: "beta"
+  mag_norm:
+    value: 4.7e-6
+    unit: "gauss"
+  index: -0.327
+  scale:
+    value: 0.253
+    unit: "Mpc"
+
+diff_data:
+  loss_only: False
+  diff_index: 0.33333
+  diff_constant:
+    value: 3.1e+28
+    unit: "cm^2/s"
+  diff_rmax:
+    value: 415
+    unit: "kpc"  
+
+part_data:
+  part_model: "bb"
+  em_model: "annihilation"
+  cross_section:
+    value: 3e-26
+    unit: "cm^3/s" 
+
+calc_data:
+  calc_mode: "flux"
+  freq_mode: "radio"
+  m_wimp:
+    value: 
+      - 100
+    unit: "GeV"
+  f_sample_num: 80
+  f_sample_limits:
+    value: 
+      - 1.0e+1
+      - 1.0e+4
+    unit: "MHz"
+  rmax_integrate: -1
+  electron_mode: "os-python"
+  os_delta_t_min: 0.1

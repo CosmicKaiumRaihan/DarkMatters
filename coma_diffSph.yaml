@@ -1,0 +1,64 @@
+calc_data:
+  os_max_steps: 20
+  calc_mode: sb
+  e_sample_number: 50
+  electron_mode: os-python
+  f_sample_limits:
+    unit: MHz
+    value:
+    - 10.0
+    - 1000000.0
+  f_sample_num: 70
+  f_sample_spacing: log
+  freq_mode: radio
+  log10_r_sample_min_factor: -3
+  m_wimp:
+    unit: GeV
+    value:
+    - 10
+    - 100
+    - 1000
+  r_sample_num: 51
+diff_data:
+  diff_constant:
+    unit: cm^2/s
+    value: 3.0e+28
+  diff_index: 0.3333333333333333
+  diff_rmax: 
+    unit: Mpc
+    value: 6.0
+gas_data:
+  gas_norm:
+    unit: 1/cm^3
+    value: 1.0e-2
+  profile: exp
+  scale:
+    unit: kpc
+    value: 1500
+halo_data:
+  name: coma
+  profile: nfw
+  scale:
+    unit: kpc
+    value: 333
+  distance:
+    unit: Mpc
+    value: 105.343
+  z: 0.023
+  mvir:
+    unit: solMass
+    value: 1.24e+15
+  rvir:
+    unit: Mpc
+    value: 3
+mag_data:
+  mag_norm:
+    unit: gauss
+    value: 4.7e-6
+  profile: flat
+part_data:
+  em_model: annihilation
+  part_model: bb
+  cross_section:
+    value: 3.0e-26
+    unit: cm^3/s
